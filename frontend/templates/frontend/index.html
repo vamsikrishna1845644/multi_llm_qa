@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-LLM QA</title>
+    <link rel="stylesheet" href="/static/frontend/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-LLM Question Answering</h1>
+        <p>Upload one or more images containing questions, and get answers from multiple LLMs.</p>
+
+        <div class="upload-section">
+            <input type="file" id="file-input" multiple accept="image/*">
+            <label for="file-input" class="file-label">Choose Images</label>
+            <button id="upload-button">Upload and Process</button>
+        </div>
+
+        <div id="image-preview" class="image-preview-grid"></div>
+
+        <div id="results-section" class="results-section"></div>
+    </div>
+
+    <script src="/static/frontend/js/scripts.js"></script>
+</body>
+</html>
